@@ -1,27 +1,21 @@
 display-always-on
 =================
-<html><br><br><br>
-dependencies
+<html><br><br>
+<p>dependencies</p>
+<p>xdotool</p>
+<p>cron</p>
 <br>
-xdotool
+<p>installation</p>
+<p>chmod 755 monitor</p>
 <br>
-cron
+<p>touch last</p>
+<br>
+<p>chmod 777 last</p>
 <br><br>
-installation
-<br>
-chmod 755 monitor
-<br>
-touch last
-<br>
-chmod 777 last
-<br><br>
-Edit your crontab with
-<br>
-crontab -e
-<br>
-Add this entry:
-<br>
+<p>Edit your crontab with</p>
+
+<p>crontab -e</p>
+<p>Add this entry:</p>
 <p>* * * * * /path/monitor /path/last</p>
-<br>
-This will run the script once a minute and move the mousepointer if it hasnt moved since last time.
+<p>This will run the script once a minute and move the mousepointer if it hasnt moved since last time.</p>
 </html>
