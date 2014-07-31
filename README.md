@@ -22,8 +22,7 @@ crontab -e
 
 Add this entry:
 
-
-* * * * * /path/monitor /path/last
+  * * * * * /path/monitor /path/last
 
 
 This will run the script once a minute and move the mousepointer if it hasnt moved since last time.
