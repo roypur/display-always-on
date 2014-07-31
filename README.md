@@ -4,16 +4,11 @@ display-always-on
 <p>dependencies</p>
 <p>xdotool</p>
 <p>cron</p>
-<br>
 <p>installation</p>
 <p>chmod 755 monitor</p>
-<br>
 <p>touch last</p>
-<br>
 <p>chmod 777 last</p>
-<br><br>
 <p>Edit your crontab with</p>
-
 <p>crontab -e</p>
 <p>Add this entry:</p>
 <p>* * * * * /path/monitor /path/last</p>
