@@ -4,8 +4,9 @@ display-always-on
 dependencies
 <br>
 xdotool
+<br>
 cron
-<br><br><br>
+<br><br>
 installation
 <br>
 chmod 755 monitor
@@ -15,12 +16,12 @@ touch last
 chmod 777 last
 <br>
 Edit your crontab with
+<br>
 crontab -e
 <br>
-
 Add this entry:
-
-<html>* * * * * /path/monitor /path/last</html>
-
-
+<br>
+* * * * * /path/monitor /path/last
+<br>
 This will run the script once a minute and move the mousepointer if it hasnt moved since last time.
+</html>
