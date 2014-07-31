@@ -1,10 +1,12 @@
 #!/bin/bash
 
+file=${1}
+
 mouse=`xdotool getmouselocation 2>&1 /dev/null | md5sum | tr -dc 0-9 | head -c 10`
 
-if [ -f mouse.txt ]
+if [ -f $file ]
 then
-  oldmouse=`cat mouse.txt`
+  oldmouse=`cat $file`
 fi
 
 if [[ $oldmouse -eq $mouse ]];
@@ -15,4 +17,4 @@ then
   mouse=`xdotool getmouselocation 2>&1 /dev/null | md5sum | tr -dc 0-9 | head -c 10`
 fi
 
-echo $mouse > mouse.txt
+echo $mouse > $file
